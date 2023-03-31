@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="Components/header.css" type="text/css" />
+    <link rel="stylesheet" href="Components/scroller.css" type="text/css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" type="text/javascript" defer></script>
+    <script src="Components/header.js" type="text/javascript" defer></script>
+    <script src="Components/scroller.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <div class="header-icon">
+          <img src="images/bk-logo.png" alt="" class="site-logo" />
+        </div>
+        <div id="close-btn" class="header-icon hidden">
+          <img
+            src="images/x-icon.png"
+            alt=""
+            class="site-logo"
+            onclick="showMobileNav()"
+          />
+        </div>
+        <nav id="navbar">
+          <div class="header-icon burger-menu">
+            <img
+              src="images/burger-menu.png"
+              alt=""
+              id="burger-menu-icon"
+              onclick="showMobileNav()"
+            />
+          </div>
+          <ul class="navlinks navlinks-desktop">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Order Online</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Our Kingdom</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-social">
+              <a
+                href="https://www.facebook.com/bklebanon"
+                target="_blank"
+                class="social-media-link"
+              >
+                <img
+                  src="images/facebook-logo.png"
+                  alt="facebook"
+                  class="social-logo icon-small"
+                />
+              </a>
+              <a
+                href="https://twitter.com/BKLebanon"
+                target="_blank"
+                class="social-media-link"
+              >
+                <img
+                  src="images/twitter-logo.png"
+                  alt="twitter"
+                  class="social-logo icon-small"
+                />
+              </a>
+              <a
+                href="https://instagram.com/burgerking_lebanon"
+                target="_blank"
+                class="social-media-link"
+              >
+                <img
+                  src="images/instagram-logo.png"
+                  alt="instagram"
+                  class="social-logo icon-small"
+                />
+              </a>
+            </li>
+            <li class="call-us">
+              <img
+                src="images/phone-ringing.png"
+                alt="phone"
+                class="phone-icon"
+              />
+              <span class="phone-nb">1525</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav id="navbar-mobile" class="removed">
+        <ul class="navlinks">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Order Online</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Our Kingdom</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Our Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact Us</a>
+          </li>
+          <li class="nav-social">
+            <a href="" target="_blank" class="social-media-link">
+              <img
+                src="images/facebook-logo.png"
+                alt="facebook"
+                class="social-logo icon-small"
+              />
+            </a>
+            <a href="" target="_blank" class="social-media-link">
+              <img
+                src="images/twitter-logo.png"
+                alt="twitter"
+                class="social-logo icon-small"
+              />
+            </a>
+            <a href="" target="_blank" class="social-media-link">
+              <img
+                src="images/instagram-logo.png"
+                alt="instagram"
+                class="social-logo icon-small"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main content -->
+    <main id="main">
+      <div class="main-container">
+        <div>
+          <div class="article article-1">
+            <img src="images/covid-19-cover.jpg" alt="" class="article-img" />
+            <div class="absolute-container">
+              <a href="#" class="article-btn">Read More</a>
+            </div>
+          </div>
+          <div class="article article-2">
+            <img src="images/bk-coupons.jpg" alt="" class="article-img" />
+            <div class="absolute-container">
+              <a href="#" class="article-btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- scroller -->
+      <div id="scroller-menu">
+        <button class="scroller-control">
+          <img src="images/arrow-left.png" alt="" />
+        </button>
+        <div id="scroller-area">
+          <div class="scroller-item">
+            <img src="images/burger.png" alt="burger" class="scroller-image" />
+            <small class="scroller-caption">Burgers</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/chicken-test.png"
+              alt="burger"
+              class="scroller-image scroller-image-wide"
+            />
+            <small class="scroller-caption">Chicken & Others</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/fries.png"
+              alt="burger"
+              class="scroller-image scroller-image-wide"
+            />
+            <small class="scroller-caption">Sides</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/full-meals.png"
+              alt="burger"
+              class="scroller-image scroller-image-wide"
+            />
+            <small class="scroller-caption">Full Meals</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/exotic-burger.png"
+              alt="burger"
+              class="scroller-image"
+            />
+            <small class="scroller-caption">King Delight</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/salad.png"
+              alt="burger"
+              class="scroller-image scroller-image-wide"
+            />
+            <small class="scroller-caption">Salads</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/soda.png"
+              alt="burger"
+              class="scroller-image scroller-image-tall"
+            />
+            <small class="scroller-caption">Beaverages</small>
+          </div>
+          <div class="scroller-item">
+            <img src="images/donut.png" alt="burger" class="scroller-image" />
+            <small class="scroller-caption">Desserts</small>
+          </div>
+          <div class="scroller-item">
+            <img
+              src="images/coffee.png"
+              alt="burger"
+              class="scroller-image scroller-image-tall"
+            />
+            <small class="scroller-caption">Coffee</small>
+          </div>
+        </div>
+        <button class="scroller-control">
+          <img src="images/arrow-right.png" alt="" />
+        </button>
+      </div>
+      <div class="main-container">
+        <div class="article article-3">
+          <img src="images/first-bite.png" alt="" class="article-img" />
+          <div class="absolute-container">
+            <a href="#" class="article-btn">Read More</a>
+          </div>
+        </div>
+        <video
+          controls
+          muted
+          autoplay
+          src="videos/bknew2clip.mpeg"
+          class="ad-video"
+          id="home-video"
+        ></video>
+      </div>
+    </main>
+    <footer>
+      <ul class="footer-links">
+        <li>
+          <a href="#" class="footer-link">BK LEBANON INFO</a>
+          <a href="#" class="footer-link">OUR PRODUCTS</a>
+          <a href="#" class="footer-link">ORDER ONLINE</a>
+          <a href="#" class="footer-link">OFFERS</a>
+          <a href="#" class="footer-link">CAREERS</a>
+          <a href="#" class="footer-link">CONTACT US</a>
+        </li>
+      </ul>
+      <hr class="divider footer-divider" />
+      <div class="additional-footer-links">
+        <div class="footer-section">
+          <div>
+            <h2 class="site-title">Burger King</h2>
+            <small
+              >TM & Copyright 2021 Burger King Corporation. All Rights
+              Reserved.</small
+            >
+          </div>
+        </div>
+        <div class="footer-section">
+          <h2>SHARE THIS WEBSITE</h2>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/bklebanon"
+              target="_blank"
+              class="social-media-link"
+            >
+              <img
+                src="images/facebook-logo-white.png"
+                alt="facebook"
+                class="social-logo icon-regular"
+              />
+            </a>
+            <a
+              href="https://twitter.com/BKLebanon"
+              target="_blank"
+              class="social-media-link"
+            >
+              <img
+                src="images/twitter-logo-white.png"
+                alt="twitter"
+                class="social-logo icon-regular"
+              />
+            </a>
+            <a
+              href="https://instagram.com/burgerking_lebanon"
+              target="_blank"
+              class="social-media-link"
+            >
+              <img
+                src="images/instagram-logo-white.png"
+                alt="instagram"
+                class="social-logo icon-regular"
+              />
+            </a>
+          </div>
+          <ul></ul>
+        </div>
+        <div class="footer-section">
+          <h2>Download BK Lebanon App</h2>
+          <div class="social-links app-store-links">
+            <a href="#">
+              <img src="images/app-store.png" alt="" class="store-link" />
+            </a>
+            <a href="#">
+              <img src="images/play-store.png" alt="" class="store-link" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

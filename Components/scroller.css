@@ -1,0 +1,77 @@
+#scroller-menu {
+  background: #db1e01;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto 1.5em auto;
+  width: 95%;
+}
+
+@media (min-width: 740px) {
+  #scroller-menu {
+    order: -1;
+    margin-bottom: 1.5em;
+    width: 100%;
+  }
+}
+
+.scroller-control {
+  width: 5%;
+  min-width: 20px;
+  max-width: 36px;
+  background: transparent;
+  border: none;
+}
+
+.scroller-control > img {
+  height: 1em;
+}
+
+#scroller-area {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 0 1em 0.5em 1em;
+}
+
+.scroller-item {
+  width: 120px;
+  /* border: solid 1px black; */
+  flex-shrink: 0;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.scroller-item:last-child {
+  margin-right: 0;
+}
+
+.scroller-image {
+  width: 100%;
+  height: 85px;
+  box-sizing: border-box;
+  padding: 1em;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.scroller-image:hover {
+  transform: scale(1.3);
+}
+
+.scroller-image-wide {
+  padding-top: 1em;
+  padding: 1em 0;
+}
+
+.scroller-image-tall {
+  padding: 1em 2.5em;
+}
+
+.scroller-caption {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
