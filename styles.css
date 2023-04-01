@@ -14,6 +14,7 @@ body * {
 .main-container {
   width: 95%;
   margin: 0 auto;
+  max-width: 1100px;
 }
 
 .divider {
@@ -33,10 +34,27 @@ body * {
 
 .removed {
   height: 0px !important;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow-y: hidden;
 }
 
 .hidden {
   visibility: hidden;
+}
+
+.ul-column {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1em;
 }
 
 .social-logo {
@@ -51,11 +69,11 @@ body * {
   display: inline-block;
 }
 
-@media (min-width: 1022px) {
+/* @media (min-width: 1022px) {
   .main-container {
     max-width: 1100px;
   }
-}
+} */
 
 /* main > * {
   border: solid 1px green;
@@ -192,6 +210,7 @@ footer {
   text-align: center;
   color: white;
   padding-bottom: 2em;
+  font-size: 1rem;
 }
 
 footer::before {
@@ -208,39 +227,48 @@ footer h2 {
   margin-top: 0;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2em 0;
-}
-
-.footer-links > li {
+.footer-main-links {
+  margin: 0 0 3em 0;
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  gap: 1em;
 }
 
-.footer-link {
-  display: block;
-  margin-bottom: 1em;
-  text-decoration: none;
-  color: white;
+.footer-dropdown {
+  margin-bottom: 0;
+}
+
+.footer-main-links > li {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-main-link {
   font-family: "Edu NSW ACT Foundation", cursive;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-.footer-link:last-child {
-  margin-bottom: 0;
+.footer-sub-links {
+  transition: 1s;
+}
+
+.footer-sub-links > li {
+  margin-bottom: 1em;
+}
+
+.footer-sub-link {
+  opacity: 0.7;
 }
 
 .footer-divider {
-  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 1px;
+  border: none;
   margin: 0 auto;
   width: 80%;
-  margin-bottom: 2em;
-}
-
-.footer-section {
   margin-bottom: 3em;
 }
 
@@ -248,8 +276,14 @@ footer h2 {
   margin-bottom: 0;
 }
 
+.additional-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+}
+
 .site-title {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   margin-bottom: 0;
   font-weight: bold;
 }
@@ -257,7 +291,7 @@ footer h2 {
 footer h2 {
   margin-bottom: 0.5em;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 
 footer small {
@@ -282,4 +316,50 @@ footer .social-logo {
 .store-link {
   width: 10em;
   height: 3.5em;
+}
+
+@media (min-width: 740px) {
+  footer {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  footer h2 {
+    font-size: 1em;
+  }
+
+  .footer-main-links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto 3em;
+  }
+
+  .footer-main-links > li {
+    gap: 0.5em;
+  }
+
+  .additional-footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .store-link {
+    width: 8em;
+    height: 2.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  footer {
+    font-size: 0.8rem;
+  }
 }
